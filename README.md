@@ -77,16 +77,6 @@ Multipage institutional website focused on layout structure, reusable styles and
 
 ---
 
-### Expense Tracker – JavaScript Fundamentals
-
-[![Expense Tracker Screenshot](public/images/portfolio.png)](https://github.com/mariafernandamamone/Expense_Tracker_App)
-
-Basic JavaScript project focused on variables, data types and operators to build core logic.
-
-💻 Code: https://github.com/mariafernandamamone/Expense_Tracker_App 
-
----
-
 ## 🌐 Live Demo
 
 👉 https://mariafernandamamone.github.io
