@@ -12,7 +12,7 @@
 
   &__text {
     color: $color-muted;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto 16px;
     line-height: 1.6;
   }
@@ -20,8 +20,27 @@
 
 .section {
   &__title {
-    font-size: 28px;
+    text-align: center;
+    margin-bottom: 60px;
     color: $color-text;
-    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 70px;
+        height: 3px;
+        margin: 12px auto 0;
+        background: linear-gradient(
+        to right,
+        $color-primary,
+        $color-accent
+        );
+        border-radius: 2px;
+        
+    }
   }
 }
