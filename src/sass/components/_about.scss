@@ -1,0 +1,27 @@
+@use '../abstracts/abstracts' as *;
+
+.about {
+  padding: 100px 0;
+  text-align: center;
+
+    background: linear-gradient(
+    180deg,
+    $color-bg 0%,
+    $color-surface 100%
+  );
+
+  &__text {
+    color: $color-muted;
+    max-width: 700px;
+    margin: 0 auto 16px;
+    line-height: 1.6;
+  }
+}
+
+.section {
+  &__title {
+    font-size: 28px;
+    color: $color-text;
+    margin-bottom: 40px;
+  }
+}
