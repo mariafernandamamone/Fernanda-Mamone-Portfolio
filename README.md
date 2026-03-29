@@ -1,6 +1,6 @@
 # María Fernanda Mamone – Portfolio
 
-Hi 👋 I’m María Fernanda Mamone, a Fullstack Developer currently completing a Master’s program in Web Development.
+Hi 👋 I’m María Fernanda Mamone, a Fullstack Developer currently completing a Master’s program in Web Development at Conquer Blocks Academy.
 
 This repository contains my personal portfolio built with modern frontend tools and a strong focus on clean structure, scalability, and real-world development practices.
 
