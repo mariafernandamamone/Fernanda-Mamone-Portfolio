@@ -1,0 +1,13 @@
+@use '../abstracts/abstracts' as *;
+
+.container {
+  max-width: 100%;
+  margin:0 auto;
+  padding:0 1rem;
+  @include breakpoint(tablet) {
+    padding-inline: 2rem;
+  }
+  @include breakpoint(desktop) {
+    padding-inline: 6rem;
+  }
+}
