@@ -44,22 +44,46 @@ public/
 
 ---
 
-## ✨ Features
+## 📌 Featured Projects
 
-- Responsive design (mobile-first approach)
-- Modular SCSS structure
-- Clean and reusable components
-- Optimized build with Vite
-- Deployed on GitHub Pages
+### Iupi Snacks – E-commerce
+
+[![Iupi Screenshot](public/images/iupi.png)](https://iupisnaksricosysaludables.com.ar)
+
+Real e-commerce website built with WordPress and WooCommerce, including product management and purchase flow.
+
+🔗 Live Demo: https://iupisnaksricosysaludables.com.ar
 
 ---
 
-## 📌 Featured Projects
+### Audiophile – UI Practice Project
 
-- **Iupi Snacks** – Real e-commerce built with WordPress & WooCommerce  
-- **Audiophile** – UI-focused practice project  
-- **ConquerBlocks Website** – Multipage layout with reusable structure  
-- **Personal Portfolio** – Previous version built with HTML & Sass  
+[![Audiophile Screenshot](public/images/audiophile.png)](https://audiophile.uno)
+
+Practice project focused on UI design and layout using WordPress and Elementor.
+
+🔗 Live Demo: https://audiophile.uno
+
+---
+
+### ConquerBlocks – Multipage Website
+
+[![ConquerBlocks Screenshot](public/images/conquerblocks.png)](https://mariafernandamamone.github.io/ConquerBlocks-Website/)
+
+Multipage institutional website focused on layout structure, reusable styles and navigation.
+
+🔗 Live Demo: https://mariafernandamamone.github.io/ConquerBlocks-Website/  
+💻 Code: https://github.com/mariafernandamamone/ConquerBlocks-Website
+
+---
+
+### Expense Tracker – JavaScript Fundamentals
+
+[![Expense Tracker Screenshot](public/images/portfolio.png)](https://github.com/mariafernandamamone/Expense_Tracker_App)
+
+Basic JavaScript project focused on variables, data types and operators to build core logic.
+
+💻 Code: https://github.com/mariafernandamamone/Expense_Tracker_App 
 
 ---
 
