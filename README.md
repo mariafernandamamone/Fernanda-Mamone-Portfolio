@@ -28,6 +28,7 @@ It showcases both real-world projects and technical practice work, highlighting 
 
 The project follows a scalable Sass architecture:
 
+```
 src/
  ├── sass/
  │    ├── abstracts/
@@ -39,6 +40,7 @@ src/
  ├── main.js
 public/
  └── images/
+```
 
 ---
 
