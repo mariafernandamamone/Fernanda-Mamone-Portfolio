@@ -1,2 +1,17 @@
 @use '../abstracts/abstracts' as *;
 
+.footer {
+  background-color: $color-surface;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2rem 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 0.9rem;
+    color: $color-muted;
+    text-align: center;
+  }
+}
