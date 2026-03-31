@@ -1,0 +1,25 @@
+@use '../abstracts/abstracts' as *;
+
+.contact {
+  padding: 100px 0;
+  background: $color-bg;
+  text-align: center;
+
+  &__text {
+    color: $color-muted;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  &__links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+    &__link {
+    @include btn-primary;
+  }
+}
