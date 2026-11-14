@@ -1,0 +1,124 @@
+@use '../abstracts/variables' as *;
+
+// Botón disparador en About
+.about__btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: $color-primary;
+    color: $color-text;
+    font-family: $font-title;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: $color-primary-dark;
+        transform: translateY(-2px);
+    }
+}
+
+// Ventana Modal (<dialog>)
+.modal {
+    margin: auto;
+    padding: 0;
+    width: min(92%, 900px);
+    max-height: 85vh;
+    background-color: $color-surface;
+    color: $color-text;
+    border: 1px solid rgba($color-accent, 0.25);
+    border-radius: 1rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+
+    &::backdrop {
+        background-color: rgba($color-bg, 0.8);
+        backdrop-filter: blur(4px);
+    }
+
+    &__content {
+        padding: 1.5rem;
+
+        @media (min-width: $bp-tablet) {
+            padding: 2rem;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid rgba($color-text, 0.1);
+    }
+
+    &__title {
+        font-size: 1.35rem;
+        color: $color-accent;
+        margin: 0;
+    }
+
+    &__close {
+        background: transparent;
+        border: none;
+        color: $color-muted;
+        font-size: 2rem;
+        line-height: 1;
+        cursor: pointer;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $color-text;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+
+        @media (min-width: $bp-tablet) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+// Tarjetas internas de certificados
+.certificate-card {
+    background-color: $color-bg;
+    border: 1px solid rgba($color-accent, 0.15);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: border-color 0.25s ease;
+
+    &:hover {
+        border-color: $color-primary;
+    }
+
+    &__image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__body {
+        padding: 1rem;
+    }
+
+    &__title {
+        font-size: 1.05rem;
+        margin: 0 0 0.35rem;
+        color: $color-text;
+    }
+
+    &__issuer {
+        font-size: 0.85rem;
+        color: $color-muted;
+        margin: 0;
+    }
+}
