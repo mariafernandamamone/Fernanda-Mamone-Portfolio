@@ -4,24 +4,28 @@ export function initCertificatesModal() {
   const openModalBtn = document.querySelector('#open-certificates');
   if (!openModalBtn) return;
 
+  const baseUrl = import.meta.env.BASE_URL;
   const modal = document.createElement('dialog');
   modal.className = 'modal';
   modal.setAttribute('aria-labelledby', 'modal-title');
 
   const cardsHTML = certificates
-    .map(
-      (cert) => `
+    .map((cert) => {
+      const cleanImg = cert.image.replace(/^\//, '');
+      const cleanFile = (cert.file || cert.image).replace(/^\//, '');
+
+      return `
       <article class="certificate-card">
-        <a href="${cert.file || cert.image}" target="_blank" rel="noopener noreferrer">
-          <img class="certificate-card__image" src="${cert.image}" alt="${cert.title}">
+        <a href="${baseUrl}${cleanFile}" target="_blank" rel="noopener noreferrer">
+          <img class="certificate-card__image" src="${baseUrl}${cleanImg}" alt="${cert.title}">
         </a>
         <div class="certificate-card__body">
           <h3 class="certificate-card__title">${cert.title}</h3>
           <p class="certificate-card__issuer">${cert.issuer}</p>
         </div>
       </article>
-    `
-    )
+    `;
+    })
     .join('');
 
   modal.innerHTML = `

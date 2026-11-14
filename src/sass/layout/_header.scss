@@ -1,6 +1,9 @@
 @use '../abstracts/abstracts' as *;
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: $color-surface;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding: 20px;
