@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="icon" href="myfavicon.png" type="image/png">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -16,7 +16,10 @@
             <nav class="navbar container">
             
             <div class="navbar__brand">
-                <strong>María Fernanda</strong>
+                <a class="navbar__brand-link" href="#">
+                    <img class="navbar__logo" src="/favicon.svg" alt="María Fernanda Mamone logo" width="32" height="32">
+                    <strong>María Fernanda</strong>
+                </a>
             </div>
 
             <button class="navbar__toggle" aria-label="Toggle navigation">
@@ -52,44 +55,42 @@
             <section class="hero" id="hero">
                 <div class="container">
                     <h1 class="hero__title">
-                    Hi, I’m <span>María Fernanda Mamone</span> 👋
+                        Hi, I’m <span>María Fernanda Mamone</span> 👋
                     </h1>
 
                     <p class="hero__text">
-                    I build responsive websites and e-commerce solutions using modern web technologies.
+                        I build interactive web applications, responsive interfaces, and e-commerce solutions using modern web technologies.
                     </p>
 
                     <p class="hero__text">
-                    Currently focused on JavaScript and scalable web development.
+                        Focused on clean JavaScript architecture, modular CSS, and scalable frontend development.
                     </p>
 
                     <div class="hero__cta">
-                    <a href="#projects" class="hero__btn hero__btn--primary">View Projects</a>
-                    <a href="#contact" class="hero__btn hero__btn--primary">
-                    Contact
-                    </a>
+                        <a href="#projects" class="hero__btn hero__btn--primary">View Projects</a>
+                        <a href="#contact" class="hero__btn hero__btn--primary">Contact</a>
                     </div>
                 </div>
             </section>
 
-            <section class="about" id="about">
+           <section class="about" id="about">
                 <div class="container">
                     <h2 class="section__title">About Me</h2>
 
                     <p class="about__text">
-                        Fullstack Developer currently completing a Master’s program in Web Development at Conquer Blocks Academy.
+                        Fullstack Developer currently completing a Master’s program in Web Development at Conquer Blocks Academy, with a strong focus on frontend engineering and modern JavaScript.
                     </p>
 
                     <p class="about__text">
-                        I specialize in building responsive websites using semantic HTML, scalable CSS architecture and modern tools like Vite.
+                        I build interactive web applications and responsive interfaces using semantic HTML, modular Sass architecture, Vite, and vanilla JavaScript (ES6+, OOP, DOM manipulation, and Web Storage APIs).
                     </p>
 
                     <p class="about__text">
-                        I also develop real-world e-commerce solutions using WordPress and WooCommerce, focusing on usability and conversion.
+                        I also develop and maintain real-world e-commerce solutions using WordPress and WooCommerce, focusing on performance, SEO, usability, and conversion.
                     </p>
 
                     <p class="about__text">
-                        Currently expanding my skills in JavaScript and backend development to build more dynamic and scalable applications.
+                        Currently advancing toward fullstack architecture and backend technologies to build end-to-end scalable applications.
                     </p>
 
                     <button type="button" class="about__btn" id="open-certificates">
@@ -104,126 +105,56 @@
 
                 <h2 class="section__title">Featured Projects</h2>
 
-                    <!-- IUPI -->
+                    <!-- 1. IUPI (REAL PROJECT) -->
                     <article class="project-card">
 
                         <span class="project-card__badge project-card__badge--real">
-                                Real Project
+                            Real Project
                         </span>
 
-                        <a href="https://iupisnaksricosysaludables.com.ar" target="_blank">
-                        <img class="project-card__image" src="/images/iupi.png" alt="Iupi Snacks Website">
+                        <a href="https://iupisnaksricosysaludables.com.ar" target="_blank" rel="noopener noreferrer">
+                            <img class="project-card__image" src="/images/iupi.jpg" alt="Iupi Snacks Website">
                         </a>
 
                         <h3 class="project-card__title">Iupi Snacks – E-commerce</h3>
 
                         <p class="project-card__text">
-                        Real e-commerce website developed with WordPress and WooCommerce.
-                        Built from scratch, including product management and purchase flow.
+                            Real e-commerce website developed with WordPress and WooCommerce.
+                            Built from scratch, including product management and purchase flow.
                         </p>
 
-                        <a class="project-card__link" href="https://iupisnaksricosysaludables.com.ar" target="_blank">
-                        View Project
+                        <a class="project-card__link" href="https://iupisnaksricosysaludables.com.ar" target="_blank" rel="noopener noreferrer">
+                            View Project
                         </a>
                     </article>
 
-                    <!-- AUDIOPHILE -->
+                    <!-- 2. MEMORY CARD GAME (OOP) -->
                     <article class="project-card">
 
                         <span class="project-card__badge project-card__badge--practice">Practice Project</span>
 
-                        <a href="https://audiophile.uno" target="_blank">
-                        <img class="project-card__image" src="/images/audiophile.png" alt="Audiophile Website">
+                        <a href="https://mariafernandamamone.github.io/Memory-Card-Game-OOP/" target="_blank" rel="noopener noreferrer">
+                            <img class="project-card__image" src="/images/memory-card-game.png" alt="Memory Card Game (OOP)">
                         </a>
 
-                        <h3 class="project-card__title">Audiophile</h3>
+                        <h3 class="project-card__title">Memory Card Game (OOP)</h3>
 
                         <p class="project-card__text">
-                        Practice project focused on UI design and layout using WordPress, Elementor and WooCommerce.
-                        </p>
-
-                        <a class="project-card__link" href="https://audiophile.uno" target="_blank">
-                        View Project
-                        </a>
-                    </article>
-
-                    <!-- CONQUERBLOCKS -->
-                    <article class="project-card">
-
-                        <span class="project-card__badge project-card__badge--practice">Practice Project</span>
-
-                        <a href="https://mariafernandamamone.github.io/ConquerBlocks-Website/" target="_blank">
-                        <img class="project-card__image" src="/images/conquerblocks.png" alt="ConquerBlocks Website">
-                        </a>
-
-                        <h3 class="project-card__title">ConquerBlocks – Multipage Website</h3>
-
-                        <p class="project-card__text">
-                        Multipage institutional website developed with a structured layout system.
-                        </p>
-
-                        <p class="project-card__text">
-                        Focused on reusable components, navigation, and scalable styling using Sass.
+                            Interactive 6x5 color-matching memory card game built with Object-Oriented JavaScript (ES6+ classes), Vite, modular Sass, HTML5 Drag &amp; Drop API, and localStorage state persistence.
                         </p>
 
                         <div class="project-card__links">
-                            <a class="project-card__link" href="https://github.com/mariafernandamamone/ConquerBlocks-Website" target="_blank">View Code</a>
-                            <a class="project-card__link" href="https://mariafernandamamone.github.io/ConquerBlocks-Website/" target="_blank">Live Demo</a>
+                            <a class="project-card__link" href="https://github.com/mariafernandamamone/Memory-Card-Game-OOP" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a class="project-card__link" href="https://mariafernandamamone.github.io/Memory-Card-Game-OOP/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                         </div>
                     </article>
 
-                    <!-- PORTFOLIO -->
+                    <!-- 3. RPG OOP COMBAT ENGINE -->
                     <article class="project-card">
 
                         <span class="project-card__badge project-card__badge--practice">Practice Project</span>
 
-                        <a href="https://mariafernandamamone.github.io/CSS-Responsive-Portfolio/" target="_blank">
-                        <img class="project-card__image" src="/images/portfolio.png" alt="Portfolio Website">
-                        </a>
-
-                        <h3 class="project-card__title">Personal Portfolio</h3>
-
-                        <p class="project-card__text">
-                        Portfolio website built from scratch using semantic HTML, Sass architecture and Vite as a build tool.
-                        </p>
-
-                        <p class="project-card__text">
-                        Designed with a modular CSS structure and responsive layout principles.
-                        </p>
-
-                        <div class="project-card__links">
-                            <a class="project-card__link" href="https://github.com/mariafernandamamone/CSS-Responsive-Portfolio" target="_blank">View Code</a>
-                            <a class="project-card__link" href="https://mariafernandamamone.github.io/CSS-Responsive-Portfolio/" target="_blank">Live Demo</a>
-                        </div>
-                    </article>
-
-                    <!-- JS EVENTS WORKSHOP -->
-                    <article class="project-card">
-
-                        <span class="project-card__badge project-card__badge--practice">Practice Project</span>
-
-                        <a href="https://mariafernandamamone.github.io/js-events-workshop/" target="_blank">
-                            <img class="project-card__image" src="/images/js-events-workshop.png" alt="JavaScript Events Workshop">
-                        </a>
-
-                        <h3 class="project-card__title">JavaScript Events Workshop</h3>
-
-                        <p class="project-card__text">
-                            Modular collection of 8 interactive vanilla JavaScript DOM manipulation and event handling exercises, including a 6x5 drag-and-drop memory game and a typing speed race.
-                        </p>
-
-                        <div class="project-card__links">
-                            <a class="project-card__link" href="https://github.com/mariafernandamamone/js-events-workshop" target="_blank">View Code</a>
-                            <a class="project-card__link" href="https://mariafernandamamone.github.io/js-events-workshop/" target="_blank">Live Demo</a>
-                        </div>
-                    </article>
-
-                    <!-- RPG OOP COMBAT ENGINE -->
-                    <article class="project-card">
-
-                        <span class="project-card__badge project-card__badge--practice">Practice Project</span>
-
-                        <a href="https://github.com/mariafernandamamone/rpg-oop-javascript" target="_blank">
+                        <a href="https://github.com/mariafernandamamone/rpg-oop-javascript" target="_blank" rel="noopener noreferrer">
                             <img class="project-card__image" src="/images/rpg-battle.png" alt="RPG Turn-Based Combat Engine">
                         </a>
 
@@ -234,7 +165,77 @@
                         </p>
 
                         <div class="project-card__links">
-                            <a class="project-card__link" href="https://github.com/mariafernandamamone/rpg-oop-javascript" target="_blank">View Code</a>
+                            <a class="project-card__link" href="https://github.com/mariafernandamamone/rpg-oop-javascript" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </div>
+                    </article>
+
+                    <!-- 4. AUDIOPHILE -->
+                    <article class="project-card">
+
+                        <span class="project-card__badge project-card__badge--practice">Practice Project</span>
+
+                        <a href="https://audiophile.uno" target="_blank" rel="noopener noreferrer">
+                            <img class="project-card__image" src="/images/audiophile.jpg" alt="Audiophile Website">
+                        </a>
+
+                        <h3 class="project-card__title">Audiophile</h3>
+
+                        <p class="project-card__text">
+                            Practice project focused on UI design and layout using WordPress, Elementor and WooCommerce.
+                        </p>
+
+                        <a class="project-card__link" href="https://audiophile.uno" target="_blank" rel="noopener noreferrer">
+                            View Project
+                        </a>
+                    </article>
+
+                    <!-- 5. CONQUERBLOCKS -->
+                    <article class="project-card">
+
+                        <span class="project-card__badge project-card__badge--practice">Practice Project</span>
+
+                        <a href="https://mariafernandamamone.github.io/ConquerBlocks-Website/" target="_blank" rel="noopener noreferrer">
+                            <img class="project-card__image" src="/images/conquerblocks.png" alt="ConquerBlocks Website">
+                        </a>
+
+                        <h3 class="project-card__title">ConquerBlocks – Multipage Website</h3>
+
+                        <p class="project-card__text">
+                            Multipage institutional website developed with a structured layout system.
+                        </p>
+
+                        <p class="project-card__text">
+                            Focused on reusable components, navigation, and scalable styling using Sass.
+                        </p>
+
+                        <div class="project-card__links">
+                            <a class="project-card__link" href="https://github.com/mariafernandamamone/ConquerBlocks-Website" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a class="project-card__link" href="https://mariafernandamamone.github.io/ConquerBlocks-Website/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        </div>
+                    </article>
+
+                    <!-- 6. PORTFOLIO -->
+                    <article class="project-card">
+
+                        <span class="project-card__badge project-card__badge--practice">Practice Project</span>
+
+                        <a href="https://mariafernandamamone.github.io/CSS-Responsive-Portfolio/" target="_blank" rel="noopener noreferrer">
+                            <img class="project-card__image" src="/images/portfolio.png" alt="Portfolio Website">
+                        </a>
+
+                        <h3 class="project-card__title">Personal Portfolio</h3>
+
+                        <p class="project-card__text">
+                            Portfolio website built from scratch using semantic HTML, Sass architecture and Vite as a build tool.
+                        </p>
+
+                        <p class="project-card__text">
+                            Designed with a modular CSS structure and responsive layout principles.
+                        </p>
+
+                        <div class="project-card__links">
+                            <a class="project-card__link" href="https://github.com/mariafernandamamone/CSS-Responsive-Portfolio" target="_blank" rel="noopener noreferrer">View Code</a>
+                            <a class="project-card__link" href="https://mariafernandamamone.github.io/CSS-Responsive-Portfolio/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                         </div>
                     </article>
 
@@ -250,12 +251,12 @@
                     <ul class="skills__list">
                         <li class="skills__item">HTML5</li>
                         <li class="skills__item">Sass / SCSS</li>
-                        <li class="skills__item">CSS Architecture</li>
-                        <li class="skills__item">Responsive Layout</li>
-                        <li class="skills__item">Vite</li>
+                        <li class="skills__item">Responsive &amp; CSS Architecture</li>
                         <li class="skills__item">JavaScript (ES6+)</li>
-                        <li class="skills__item">Git & GitHub</li>
-                        <li class="skills__item">WordPress Development</li>
+                        <li class="skills__item">Object-Oriented Programming</li>
+                        <li class="skills__item">DOM &amp; Browser APIs</li>
+                        <li class="skills__item">Vite &amp; Git / GitHub</li>
+                        <li class="skills__item">WordPress &amp; WooCommerce</li>
                     </ul>
                 </div>
             </section>
@@ -266,15 +267,21 @@
                     <h2 class="section__title">Contact</h2>
 
                     <p class="contact__text">
-                    Feel free to reach out or connect with me on LinkedIn.
+                        Feel free to reach out via email or connect with me on LinkedIn.
                     </p>
 
                     <div class="contact__links">
-                    <a class="contact__link" href="https://www.linkedin.com/in/mfmamone/" target="_blank">
-                        LinkedIn
-                    </a>
+                        <a class="contact__link" href="https://www.linkedin.com/in/mfmamone/" target="_blank">
+                            LinkedIn
+                        </a>
 
-                    <a class="contact__link contact__link--secondary" href="mailto:mariafrenchitas@gmail.com">Email</a>
+                        <a class="contact__link" href="mailto:mariafrenchitas@gmail.com">
+                            mariafrenchitas@gmail.com
+                        </a>
+
+                        <button type="button" class="contact__link" id="copy-email-btn" aria-label="Copy email address">
+                            Copy Email
+                        </button>
                     </div>
                 </div>
             </section>
@@ -282,8 +289,23 @@
         </main>
 
         <footer class="footer">
-            <div class="container">
-              <p class="footer__text">© 2026 María Fernanda Mamone</p>
+            <div class="container footer__content">
+                <div class="footer__brand">
+                    <img class="footer__logo" src="/favicon.svg" alt="María Fernanda Mamone logo" width="28" height="28">
+                    <span class="footer__name">María Fernanda Mamone</span>
+                </div>
+
+                <p class="footer__tagline">
+                    Frontend &amp; WordPress Developer
+                </p>
+
+                <div class="footer__socials">
+                    <a class="footer__social-link" href="https://github.com/mariafernandamamone" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a class="footer__social-link" href="https://www.linkedin.com/in/mfmamone/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a class="footer__social-link" href="mailto:mariafrenchitas@gmail.com">Email</a>
+                </div>
+
+                <p class="footer__text">© 2026 María Fernanda Mamone. All rights reserved.</p>
             </div>
         </footer>
         

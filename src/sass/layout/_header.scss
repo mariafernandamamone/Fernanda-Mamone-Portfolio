@@ -22,6 +22,26 @@
     color: $color-text;
   }
 
+  &__brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
+    color: $color-text;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+  }
+
   &__toggle {
     position: relative;
     width: 24px;
@@ -46,12 +66,10 @@
   &__icon {
     position: absolute;
     inset: 0;
-
     stroke: $color-text;
     stroke-width: 2;
     stroke-linecap: round;
     fill: none;
-
     transition: opacity 0.3s ease, transform 0.3s ease;
 
     &--menu {
@@ -63,29 +81,17 @@
       transform: scale(0.8);
     }
   }
-  
-  
-
-  &__icon {
-    stroke: $color-text;
-    stroke-width: 2;
-    stroke-linecap: round;
-    fill: none;
-  }
 
   &__menu-wrapper {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-
     background-color: $color-surface;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-
     transition: all 0.3s ease;
 
     &.is-open {
@@ -99,7 +105,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-
     list-style: none;
     margin: 0;
     padding: 1.5rem 0;
@@ -112,10 +117,7 @@
     position: relative;
     transition: color 0.2s ease;
 
-    &:hover {
-      color: $color-accent;
-    }
-
+    &:hover,
     &.active {
       color: $color-accent;
     }

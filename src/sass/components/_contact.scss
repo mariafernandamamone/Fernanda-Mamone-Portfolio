@@ -21,5 +21,9 @@
 
     &__link {
     @include btn-primary;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
   }
 }

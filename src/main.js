@@ -12,3 +12,20 @@ toggleBtn.addEventListener('click', () => {
 
 // Initialize Certificates Modal
 initCertificatesModal();
+
+const copyEmailBtn = document.getElementById('copy-email-btn');
+
+if (copyEmailBtn) {
+  copyEmailBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText('mariafrenchitas@gmail.com');
+      const originalText = copyEmailBtn.textContent;
+      copyEmailBtn.textContent = 'Copied!';
+      setTimeout(() => {
+        copyEmailBtn.textContent = originalText;
+      }, 2000);
+    } catch (error) {
+      console.error('Failed to copy email:', error);
+    }
+  });
+}
